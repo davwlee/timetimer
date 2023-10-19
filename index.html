@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Time Calculator</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Time Calculator</h1>
+      <label for="inputTime">Enter time (HH:mm am/pm):</label>
+      <input type="text" id="inputTime" placeholder="e.g., 11:30 pm" />
+      <label for="inputMinutes">Enter minutes:</label>
+      <input type="number" id="inputMinutes" placeholder="e.g., 60" />
+      <button onclick="calculateTime()">Calculate</button>
+      <p id="result"></p>
+      <div>
+        Note: When entering the time, it has to be x:xx am/pm format, must
+        include : and a space after the numbers. Sometimes you'll have to
+        refresh me!
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
